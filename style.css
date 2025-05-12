@@ -1,0 +1,133 @@
+body {
+  height: 1000vh;
+  overflow-x: hidden;
+  display: flexbox;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  color: #ffffff;
+  background-color: #0b4d70;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 5px solid #d8ae4b;
+  z-index: 1000;
+}
+
+video {
+  display: block;
+  position: relative;
+  width: 1366px;
+  margin-left: -10px;
+  object-fit: contain;
+  z-index: -100;
+}
+
+.item-nav {
+  flex-direction: column;
+}
+
+.nav .container {
+  display: flex;
+}
+.container a {
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-inline: 10px;
+}
+
+.dropbtn {
+  background-color: #04aa6d;
+  color: #ffffff;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10%;
+}
+
+/****************************************************************************************
+CalloutBox
+ *****************************************************************************************/
+
+.calloutbox {
+  position: relative;
+  display: flex;
+  border-radius: 10px;
+  background-color: #cfac32;
+  width: 85%;
+  top: -1%;
+  z-index: -1;
+  padding: 50px;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.shadow {
+  z-index: -1;
+  position: relative;
+  margin-top: -97px;
+  margin-left: 17%;
+}
+
+.unesa-today {
+  text-align: center;
+}
+
+h2 {
+  font-size: 41px;
+  color: #555555;
+  margin-bottom: 20px;
+}
+hr {
+  width: 9rem;
+  height: 5px;
+  border: none;
+  background-color: #0b4d70;
+}
+/* Gambar pertama */
+.gambar1 {
+  background-color: #ffffff;
+  margin: 10px 86px;
+}
+
+.gambar1:hover {
+  filter: brightness(55%);
+}
+
+.gambar1:hover::after {
+  /* content: url("asset/icon/link.png");
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  z-index: 10; */
+
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  background-image: url("asset/icon/link.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid white; /* border untuk ikon */
+  padding: 5px;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
