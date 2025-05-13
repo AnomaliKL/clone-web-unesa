@@ -1,9 +1,8 @@
 body {
-  height: 1000vh;
+  height: 903vh;
   overflow-x: hidden;
   display: flexbox;
   font-family: Lato, sans-serif;
-  font-weight: 300;
   font-size: 14px;
 }
 
@@ -11,19 +10,21 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 1316px;
   height: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
   color: #ffffff;
   background-color: #0b4d70;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 5px solid #d8ae4b;
+  border-bottom: 5px solid #cfac32;
   z-index: 1000;
 }
 
 video {
-  display: block;
+  display: flex;
   position: relative;
   width: 1366px;
   margin-left: -10px;
@@ -62,37 +63,68 @@ CalloutBox
 .calloutbox {
   position: relative;
   display: flex;
+  flex-direction: column;
   border-radius: 10px;
   background-color: #cfac32;
-  width: 85%;
   top: -1%;
   z-index: -1;
-  padding: 50px;
+  padding-top: 20px;
   margin: 0 auto;
+  margin-bottom: -120px;
+  justify-content: center;
+}
+
+.calloutbox .service {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.calloutbox .service .isi {
+  padding: 10px 55px;
+}
+
+.calloutbox .konten {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.calloutbox .konten .isi p,
+.calloutbox .service .isi {
+  font-family: "PT sans", sans-serif;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
   flex-direction: column;
+}
+.calloutbox .konten .isi img {
+  height: 56;
+  width: 56;
 }
 
 .shadow {
   z-index: -1;
   position: relative;
-  margin-top: -97px;
-  margin-left: 17%;
+  margin-top: 63px;
+  margin-left: 15%;
+  margin-bottom: -50px;
 }
 
-.unesa-today {
+.judul {
+  font-family: "PT sans", sans-serif;
   text-align: center;
 }
 
 h2 {
-  font-size: 41px;
+  font-size: 31px;
   color: #555555;
-  margin-bottom: 20px;
+  margin-bottom: 1px;
 }
-hr {
-  width: 9rem;
+.judul hr {
+  width: 7rem;
   height: 5px;
   border: none;
-  background-color: #0b4d70;
+  background-color: #3498db;
 }
 /* Gambar pertama */
 .gambar1 {
@@ -105,15 +137,6 @@ hr {
 }
 
 .gambar1:hover::after {
-  /* content: url("asset/icon/link.png");
-  position: absolute;
-  top: 45%;
-  left: 35%;
-  transform: translate(-50%, -50%);
-  width: 20px;
-  height: 20px;
-  z-index: 10; */
-
   content: "";
   position: absolute;
   top: 50%;
@@ -131,3 +154,328 @@ hr {
   z-index: 10;
 }
 
+.info1 {
+  font-family: "PT sans", sans-serif;
+  padding: 25px 0px 2px 20px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 30px;
+  position: relative;
+  /* display: flex; */
+  border-radius: 10px;
+  background-color: #cfac32;
+  margin-left: 120px;
+  margin-right: 600px;
+  margin-top: -40px;
+  z-index: 100;
+}
+
+.rinfo1 {
+  padding: 25px 0px 30px 20px;
+  background-color: #0b4d70;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  border-radius: 10px;
+  color: #ffffff;
+  margin: -25px 430px 0px 120px;
+  z-index: 90;
+}
+
+/*  kumpulan gambar berita */
+.foto-berita {
+  display: flex;
+  flex-direction: row;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.foto-berita img {
+  border-radius: 10px;
+  height: 190px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* kotak */
+.kotak {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.kotak .isi {
+  margin-top: 25px;
+  margin-bottom: 5px;
+  background-color: black;
+  width: 25px;
+  height: 25px;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+/* kotak */
+/* tombol selengkapnya */
+.selengkapnya {
+  color: #ffffff;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+.selengkapnya .satu {
+  padding: 8px;
+  font-family: "PT sans", sans-serif;
+  font-size: 14px;
+  background-color: #0b4d70;
+}
+
+.selengkapnya .dua {
+  width: 15;
+  height: 15;
+  background-color: black;
+}
+
+.garis {
+  margin-top: 70px;
+  margin-left: -10px;
+  background-color: #0b4d70;
+  height: 40px;
+  width: 110%;
+  border-top: 3px solid #cfac32;
+  border-bottom: 3px solid #cfac32;
+}
+
+/* Informasi */
+.informasi {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.informasi .event .konten,
+.informasi .pengumuman .konten {
+  margin-left: 20px;
+  margin-right: 15px;
+  width: 520px;
+}
+
+.informasi .event .konten .isi,
+.informasi .pengumuman .konten .isi {
+  font-size: 18px;
+  font-family: "PT sana", sans-serif;
+  padding-bottom: 15px;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 20px;
+}
+
+.informasi .event .konten .tanggal {
+  color: #0b4d70;
+  font-weight: 100;
+  font-size: 14px;
+  font-weight: lighter;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.informasi .pengumuman .konten .tanggal {
+  color: #cfac32;
+  font-weight: 100;
+  font-size: 14px;
+  font-weight: lighter;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.informasi .event .konten .tanggal,
+.informasi .pengumuman .konten .tanggal {
+  padding-bottom: 10px;
+}
+
+.informasi .event .konten {
+  background-color: #cfac32;
+}
+
+.informasi .pengumuman .konten {
+  background-color: #0b4d70;
+}
+
+.informasi .event .konten,
+.informasi .pengumuman .konten {
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.info-kampus {
+  margin-top: 20px;
+  margin-left: -20px;
+  margin-bottom: 20px;
+  width: 100%;
+  background-image: url(asset/Pictures/background/2691386900.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  padding: 20px 50px 30px 50px;
+}
+
+.info-kampus .konten {
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  padding: 20px 50px 40px 50px;
+}
+
+.info-kampus .konten .item {
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.info-kampus .konten .item .jumlah {
+  color: #ffffff;
+  font-size: 60px;
+}
+
+.info-kampus .konten .item .program {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+/* International Accreditation */
+.international .konten,
+.matrics .konten {
+  display: flex;
+  justify-content: center;
+}
+
+.international .konten .item img,
+.rank .konten .item img,
+.matrics .konten .item img {
+  width: 200px;
+  height: 200px;
+}
+
+.international .konten .item,
+.rank .konten .item,
+.matrics .konten .item {
+  display: flex;
+}
+
+.international .konten .item .number,
+.rank .konten .item .number,
+.matrics .konten .item .number {
+  margin-top: 80px;
+  margin-left: 20px;
+  margin-right: 25px;
+  font-family: Poppins, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #0b4d70;
+}
+
+.rank {
+  display: flex;
+  flex-direction: column;
+}
+
+.rank .konten {
+  margin-left: -100px;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  gap: 100px;
+}
+
+.matrics .konten .item {
+  padding: 50px;
+
+}
+
+/* Lokasi Kampus */
+.lokasi {
+  width: 100%;
+  margin-left: -8px;
+  padding: 60px;
+  background-color: #062137;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  gap: 30px;
+}
+
+.lokasi .item:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 35px;
+  color: #ffffff;
+}
+
+.lokasi .item:first-child i {
+  margin-left: 40px;
+}
+
+.garis2 {
+  background-color: #0b4d70;
+  width: 110%;
+  height: 50px;
+  margin-left: -8px;
+}
+
+/* Bagian Bawah */
+footer {
+  padding: 60px;
+  width: 107%;
+  margin-left: -8px;
+  background-color: #062137;
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+  font-family: "PT sans", sans-serif;
+  font-size: 20px;
+}
+
+footer .konten {
+  padding: 10px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+footer .konten:first-child {
+  margin-top: -50px;
+  padding-right: 30px;
+}
+
+footer .konten img {
+  width: 230px;
+}
+footer .konten .judul {
+  font-family: "PT sans", sans-serif;
+  font-size: 20px;
+}
+
+footer .konten p {
+  margin-left: 20px;
+  font-size: 14px;
+}
+footer .konten b {
+  font-weight: bold;
+  margin-bottom: -10px;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+footer .konten a {
+  margin: 10px 0px 10px 0px;
+  font-weight: 100;
+  display: flex;
+  text-decoration: none;
+  color: #b7b7b7;
+  font-size: 14px;
+}
+
+footer .konten:last-child {
+  background-color: #0b4d70;
+  height: 265px;
+}
